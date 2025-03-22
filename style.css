@@ -135,7 +135,7 @@ p {
   font-size: 32px;
   font-weight: 400;
 }
-#btn-shop-now {
+.btn-shop-now {
   border: 1px solid var(--black);
   border-radius: 10px;
   padding: 15px 20px;
@@ -180,7 +180,7 @@ p {
   top: 30px;
   left: 340px;
 }
-#title-section--two {
+.title-section--two {
   font-size: 48px;
   font-weight: 900;
   z-index: 1;
@@ -199,6 +199,92 @@ p {
   bottom: 20px;
   left: 420px;
 }
+
+.section--three {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  height: 968px;
+  background: linear-gradient(
+    1.32deg,
+    #e0c340 0.13%,
+    #dfc23e 3.97%,
+    #e1c441 7.2%,
+    #e3c743 10.13%,
+    #e4c542 12.98%,
+    #e6c744 15.99%,
+    #e7c845 19.52%,
+    #e5c643 23.96%,
+    #e6c945 30.43%,
+    #e3c743 36.49%,
+    #e9ca48 42.49%,
+    #edce49 49.35%,
+    #f0d44c 55.42%,
+    #f4d84f 61.43%,
+    #f6da52 65.74%,
+    #f7db53 72.23%,
+    #f9dd55 77.43%,
+    #f9df56 83.84%,
+    #fae157 91.52%,
+    #f9df56 97.87%
+  );
+  margin: 150px 0px;
+  position: relative;
+}
+.section--three-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+.white-rect-sec {
+  position: absolute;
+  top: 90px;
+  right: 465px;
+}
+.section--three-p {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 52.32px;
+}
+.star5 {
+  position: absolute;
+  top: 170px;
+  left: 150px;
+}
+.star6 {
+  position: absolute;
+  bottom: 395px;
+  left: 200px;
+}
+.star7 {
+  position: absolute;
+  bottom: 250px;
+  left: 800px;
+}
+.star8 {
+  position: absolute;
+  top: 90px;
+  left: 750px;
+}
+.section--four {
+  position: relative;
+}
+.vector-v {
+  position: absolute;
+  top: 30px;
+  left: 450px;
+}
+.arrows {
+  position: absolute;
+  bottom: 20px;
+  left: 780px;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
 /* Header's Responsive*/
 @media only screen and (max-width: 768px) {
   .header {
@@ -241,84 +327,193 @@ p {
 
 @media only screen and (max-width: 768px) {
   .section--one {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    width: 100%;
+    justify-items: center;
+    width: 100vw;
+    margin: 0;
     height: auto;
     padding: 50px 20px;
-    text-align: center;
+    position: relative;
+
+    .section--one-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+
+    h2 {
+      font-size: 6vw;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .btn-shop-now {
+      font-size: 24px;
+      padding: 12px 20px;
+    }
+
+    .img--girl img {
+      max-width: 70%;
+      height: auto;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .yellow-rect,
+    .white-rect,
+    .star1,
+    .star2,
+    .star3,
+    .star4 {
+      display: none;
+    }
   }
 
-  .section--one-txt {
-    align-items: center;
-    padding: 0;
-    gap: 20px;
+  @media only screen and (max-width: 768px) {
+    .brands {
+      display: flex;
+    }
+
+    .hm img {
+      max-width: 70px;
+    }
   }
 
-  h2 {
-    font-size: 6vw;
+  @media only screen and (max-width: 480px) {
+    .hm img {
+      max-width: 70px;
+    }
   }
 
-  p {
-    font-size: 1rem;
+  /*Cards Responsive*/
+
+  @media only screen and (max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .img-card {
+      padding: 15px;
+    }
+
+    #title-section--two {
+      font-size: 2rem;
+    }
+
+    .vector img {
+      max-width: 60px;
+    }
+
+    .arrow-link img {
+      width: 35px;
+    }
   }
 
-  #btn-shop-now {
-    font-size: 1.2rem;
-    padding: 12px 20px;
+  @media only screen and (max-width: 480px) {
+    .img-card {
+      padding: 10px;
+    }
+
+    .section--two-p {
+      font-size: 1.2rem;
+    }
+
+    .explore-now {
+      font-size: 1rem;
+    }
+
+    .arrow-link img {
+      width: 30px;
+    }
   }
 
-  .img--girl img {
-    max-width: 80%;
-    height: auto;
+  /*Section three responsive*/
+  @media only screen and (max-width: 768px) {
+    .section--three {
+      grid-template-columns: 1fr; /* Stack items */
+      padding: 20px;
+      height: auto;
+      text-align: center;
+    }
+
+    .section--three-txt {
+      align-items: center;
+      gap: 20px;
+    }
+
+    h2 {
+      font-size: 6vw;
+    }
+
+    .section--three-p {
+      font-size: 16px;
+    }
+
+    .btn-shop-now {
+      font-size: 24px;
+      padding: 12px 20px;
+    }
+
+    .yellow-girl img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .star8 {
+      display: none;
+    }
+
+    .white-rect-sec {
+      display: none;
+    }
   }
 
-  .yellow-rect,
-  .white-rect,
-  .star2 {
-    display: none;
-  }
-}
-/*Cards Responsive*/
+  /*section 4 responsive*/
+  @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
+      .section--four {
+        padding: 30px;
+      }
 
-@media only screen and (max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
 
-  .img-card {
-    padding: 15px;
-  }
+      .img-card {
+        width: 100%;
+        height: auto;
+      }
 
-  #title-section--two {
-    font-size: 2rem;
-  }
+      .explore-now {
+        font-size: 16px;
+      }
+    }
 
-  .vector img {
-    max-width: 60px;
-  }
+    @media only screen and (max-width: 480px) {
+      .img-card {
+        padding: 10px;
+      }
 
-  .arrow-link img {
-    width: 35px;
-  }
-}
+      .section--two-p {
+        font-size: 1rem;
+      }
 
-@media only screen and (max-width: 480px) {
-  .img-card {
-    padding: 10px;
-  }
+      .explore-now {
+        font-size: 1rem;
+      }
 
-  .section--two-p {
-    font-size: 1.2rem;
-  }
-
-  .explore-now {
-    font-size: 1rem;
-  }
-
-  .arrow-link img {
-    width: 30px;
+      .arrow-link img {
+        width: 30px;
+      }
+    }
   }
 }
